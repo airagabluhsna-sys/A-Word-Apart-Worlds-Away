@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*/images/
+data/real_raw/
+data/*/items_*.jsonl
+kaggle/out/
+*.zip
+report/site/

@@ -1,0 +1,20 @@
+# Tier 0 pilot: 20 test concepts + 10 distractors, all three regimes.
+out_dir: data/tier0_pilot
+seed: 0
+name_seed: 0           # change per counterbalancing seed to re-assign names
+n_test: 20
+n_distractor: 10
+min_hamming: 3
+images_per_concept: 40
+texts_per_concept: 40
+image_size: 448        # multiple of 28 for Qwen-VL patching
+# S = split teaching with hidden attributes left out of the images (main arm);
+# S-neutral / S-random draw them as a fixed default / a random value (ablations).
+regimes: [V, T, S, S-neutral, S-random]
+s_always_visual: [shape, pattern, material]   # can't be hidden by absence
+# chosen by the silence audit (kaggle/silence_audit.py); these are also the code defaults
+absence: {color: creature_gray, legs: grass}
+size_reference: matched
+max_abs_symbolism: 0.2
+wordlist: null         # path to a newline-separated English word list, if available
+workers: null          # default: all CPU cores

@@ -1,0 +1,14 @@
+{
+  "id": "USERNAME/snsaid-teach",
+  "title": "snsaid teach",
+  "code_file": "teach.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "enable_internet": true,
+  "dataset_sources": ["USERNAME/snsaid-tier0-pilot"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
