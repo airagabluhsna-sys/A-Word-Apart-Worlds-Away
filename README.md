@@ -205,22 +205,3 @@ with bootstrap intervals over concepts.
 
 `kaggle/push.py` honours `SNSAID_CODE_DIR` to upload a frozen copy of the
 package, so a queue of runs keeps one code version while the tree changes.
-
-### Not yet done
-- General replay data during LoRA (proposal §6.2); only anchors for now.
-- Name filtering against a real word list and the target tokenizer (no
-  dictionary or internet on the build machine). Pass `wordlist:` in the config
-  and a tokenizer to `generate_names` on a machine that has them.
-- Property-classifier check that every attribute is visually recoverable.
-- Linear-probe V-information on frozen vision features, with held-out
-  concepts (otherwise concept identity alone predicts a hidden attribute).
-- Known-concept anchors and the shuffled-label control.
-- Evaluation items L5–L7; S-regime integration items (need one V-part and one T-part attribute).
-
-## Results site and paper draft
-
-`py -3.13 report/build.py` rebuilds `report/site/` (overview, method, one page per
-finding, every run, a filterable explorer of all cells, and the paper draft)
-from the raw outputs in `kaggle/out`. Narrative pages are in `report/content/`;
-numbers in them are placeholders filled from the data. Register new runs in
-`RUNS` / `EVALS` at the top of `report/build.py`.
