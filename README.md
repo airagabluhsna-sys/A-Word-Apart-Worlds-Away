@@ -1,4 +1,4 @@
-# Seen, Never Said
+# A Word Apart, Worlds Away: The Cross-Modal Two-Hop Curse in Vision-Language Models
 
 Bidirectional cross-modal concept transfer in vision-language models: teach a
 VLM a made-up concept through images only (or text only), then test it through
